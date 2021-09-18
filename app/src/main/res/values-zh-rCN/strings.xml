@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First</string>
+    <string name="btn1_label">姓名</string>
+    <string name="btn2_label">教室</string>
+    <string name="inp_hint">输入你的姓名</string>
+    <string name="inpa_hint">输入你的密码</string>
+    <string name="inph_hint">输入你的身高(cm)</string>
+    <string name="inpw_hint">输入你的体重(kg)</string>
+    <string name="textView5">你的BMI指数是：</string>
+    <string name="textView3">给出的健康建议是：</string>
+    <string name="btn">开始计算</string>
+    <string name="teama">A队</string>
+    <string name="teamb">B队</string>
+    <string name="point3">+3分</string>
+    <string name="point2">+2分</string>
+    <string name="point1">+1分</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="btn1_label">Name</string>
+    <string name="btn2_label">ClassRoom</string>
+    <string name="inph_hint">Input your height(m)</string>
+    <string name="inpw_hint">Input your weight(kg)</string>
+    <string name="textView5">The Body Mass Index (BMI) is:</string>
+    <string name="textView3">Health advice:</string>
+    <string name="btn">Start calculation</string>
+    <string name="teama">Team A</string>
+    <string name="teamb">Team B</string>
+    <string name="point3">+3 points</string>
+    <string name="point2">+2 points</string>
+    <string name="point1">+1 points</string>
+</resources>
