@@ -31,6 +31,7 @@ public class MainActivity_teamscore extends AppCompatActivity {
         }else if(btn.getId()==R.id.btna1){
             score1+=1;
         }else{
+            //reset
             score1=0;
             score2=0;
         }
