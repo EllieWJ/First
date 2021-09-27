@@ -15,4 +15,8 @@
     <string name="point3">+3分</string>
     <string name="point2">+2分</string>
     <string name="point1">+1分</string>
+    <string name="editTextTextPersonName2">输入RMB数值</string>
+    <string name="outnum">你好</string>
+    <string name="rmb">输入RMB数值</string>
+    <string name="menu_set">设置</string>
 </resources>

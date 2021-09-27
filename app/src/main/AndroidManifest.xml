@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First">
         <activity
+            android:name=".MainActivity_rmb2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_rmb"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity_teamscore"
             android:exported="true" />
         <activity

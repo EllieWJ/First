@@ -12,4 +12,7 @@
     <string name="point3">+3 points</string>
     <string name="point2">+2 points</string>
     <string name="point1">+1 points</string>
+    <string name="rmb">Input RMB</string>
+    <string name="outnum">Hello</string>
+    <string name="menu_set">Setting</string>
 </resources>

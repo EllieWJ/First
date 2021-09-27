@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/rmb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/rmb"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/outnum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="28dp"
+        android:hint=""
+        android:text="" />
+
+    <Button
+        android:id="@+id/DOLLAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="click"
+        android:text="DOLLAR" />
+
+    <Button
+        android:id="@+id/EURO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="click"
+        android:text="EURO" />
+
+    <Button
+        android:id="@+id/WON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:layout_marginBottom="20dp"
+        android:text="WON" />
+
+    <Button
+        android:id="@+id/CONFIG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIG"
+        android:onClick="openconfig"/>
+</LinearLayout>
