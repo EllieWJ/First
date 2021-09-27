@@ -43,19 +43,20 @@ public class MainActivity_rmb2 extends AppCompatActivity {
         Log.i(TAG,"opensave:dollarrate="+dollar);
         Log.i(TAG,"opensave:eurorate="+euro);
         Log.i(TAG,"opensave:wonrate="+won);
-
+/**
         Intent save=getIntent();
         Bundle bdl=new Bundle();
         bdl.putFloat("dollar_key",dollar);
         bdl.putFloat("euro_key",euro);
         bdl.putFloat("won_key",won);
         save.putExtras(bdl);
- /**
+ **/
+
         Intent save=getIntent();
         save.putExtra("dollar_key",dollar);
         save.putExtra("euro_key",euro);
         save.putExtra("won_key",won);
-**/
+
         //startActivity(save);
         setResult(3,save);
         finish();

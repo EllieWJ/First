@@ -80,14 +80,15 @@ public class MainActivity_rmb extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(requestCode==1&&resultCode==3){
+
+            dollarrate=data.getFloatExtra("dollar_key",0.1f);
+            eurorate=data.getFloatExtra("euro_key",0.1f);
+            wonrate=data.getFloatExtra("won_key",0.1f);
             /**
-            dollarrate=data.getFloatExtra("key_dollar",0.1f);
-            eurorate=data.getFloatExtra("key_euro",0.1f);
-            wonrate=data.getFloatExtra("key_won",0.1f); **/
             Bundle bundle=new Bundle();
             dollarrate=bundle.getFloat("key_dollar",0.1f);
             eurorate=bundle.getFloat("key_euro",0.1f);
-            wonrate=bundle.getFloat("key_won",0.1f);
+            wonrate=bundle.getFloat("key_won",0.1f);**/
             Log.i(TAG,"onActivityResult:dollarrate="+dollarrate);
             Log.i(TAG,"onActivityResult:eurorate="+eurorate);
             Log.i(TAG,"onActivityResult:wonrate="+wonrate);
