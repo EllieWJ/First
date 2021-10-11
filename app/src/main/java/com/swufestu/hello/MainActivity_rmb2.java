@@ -1,6 +1,8 @@
 package com.swufestu.hello;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,6 +41,13 @@ public class MainActivity_rmb2 extends AppCompatActivity {
         float dollar=Float.parseFloat(output1.getText().toString());
         float euro=Float.parseFloat(output2.getText().toString());
         float won=Float.parseFloat(output3.getText().toString());
+
+        SharedPreferences sp=getSharedPreferences("rate", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor=sp.edit();
+        editor.putFloat("dollar_rate",dollar);
+        editor.putFloat("euro_rate",euro);
+        editor.putFloat("won_rate",won);
+        editor.apply();
 
         Log.i(TAG,"opensave:dollarrate="+dollar);
         Log.i(TAG,"opensave:eurorate="+euro);
