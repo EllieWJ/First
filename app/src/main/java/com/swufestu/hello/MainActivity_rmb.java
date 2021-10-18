@@ -51,11 +51,11 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
     EditText rmb;
     TextView output1;
     Handler handler;
-
+/**
     Date start ;
     Date now ;
     SharedPreferences spf;
-
+**/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +66,12 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
         //读取保存的数据
         SharedPreferences sp=getSharedPreferences("rate", Activity.MODE_PRIVATE);
         PreferenceManager.getDefaultSharedPreferences(this);
-        spf = getSharedPreferences("time", Activity.MODE_PRIVATE);
+        //spf = getSharedPreferences("time", Activity.MODE_PRIVATE);
 
         dollarrate=sp.getFloat("dollar_rate",0.1548f);
         eurorate=sp.getFloat("euro_rate",0.1323f);
         wonrate=sp.getFloat("won_rate",182.5773f);
-
+/**
         String dateString;
         dateString = spf.getString("dateString","");
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
@@ -92,13 +92,13 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-        }
+        }  **/
 
         Log.i(TAG, "onCreate: get from sp dollar="+dollarrate);
         Log.i(TAG, "onCreate: get from sp euro="+eurorate);
         Log.i(TAG, "onCreate: get from sp won="+wonrate);
 
-        start =new Date(System.currentTimeMillis());
+       // start =new Date(System.currentTimeMillis());
 
         handler=new Handler(Looper.myLooper()){
             public void handleMessage(@NonNull Message msg){
@@ -124,6 +124,9 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
             }
         };
         //开启线程
+        //MyThrea td=new MyThrea();
+        //td.setHandler(handler);
+
         Thread t = new Thread(this);
         t.start();
 
@@ -223,17 +226,19 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+     //   while (true){
+        /**
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");// HH:mm:ss
             now = new Date(System.currentTimeMillis()); //获取当前系统时间
             long cha = now.getTime() - start.getTime();
-            double result = cha* 1.0 /(1000 * 60 * 60);
-            if (result>24) {
+            double result = cha* 1.0 /(1000 * 60 * 60);**/
+           // if (result>24) {
+        /**
                 SharedPreferences sp = getSharedPreferences("time", Activity.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.apply();
                 editor.putString("dataString", simpleDateFormat.format(now));
-                Log.i(TAG, "onEnd: " + simpleDateFormat.format(now));
+                Log.i(TAG, "onEnd: " + simpleDateFormat.format(now)); **/
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
@@ -308,12 +313,12 @@ public class MainActivity_rmb extends AppCompatActivity implements Runnable{
                 handler.sendMessage(msg);
                 Log.i(TAG, "run: 消息已发送");
 
-            }
+         //   }
 
 
 
 
-        }
+     //   }
 
     }
 
